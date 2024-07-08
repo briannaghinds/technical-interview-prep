@@ -1,6 +1,8 @@
 ## Technical Interview Prep (w/ Python)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0K_eZGS5NsU?si=7t2LflseAOLkjHpu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Video Aids:
+
+- https://youtu.be/0K_eZGS5NsU?feature=shared (Neetcode: Python for Coding Interviews)
 
 ## GOAL/BREAKDOWN:
 (1) to be ready for a technical interview

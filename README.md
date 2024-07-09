@@ -16,4 +16,8 @@ Video Aids:
 #### LeetCode Grind
 #### Notes
 #### OOP
+Breaking down the 4 main Object-Oriented Programming concepts: Abstraction, Encapsulation, Inheritance, Polymorphism
+
 #### Searching and Sorting
+- Binary Search (recursive)
+- Linear Search

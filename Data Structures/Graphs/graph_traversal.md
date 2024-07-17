@@ -1,0 +1,8 @@
+## Depth First Search
+Simply put, a depth-first graph search continues down a path until it reaches the end. It is helpful for determining if a path exists between two vertices. DFS has many applications, including topological sorting and detecting cycles, but one of the more interesting real-world applications is that it can be used to solve problems that have a singular correct answer (a path between the start state and end state), such as a sudoku exercise.
+## Breadth First Search
+On the other hand, a breadth-first graph search approach checks the values of all neighboring vertices before moving into another level of depth. This is an incredibly inefficient way to find just any path between two vertices, but it’s an excellent way to identify the shortest path between them. Because of this, BFS is helpful for figuring out directions from one place to another.
+## Dijkstra's Algorithm
+Dijkstra’s algorithm is a method for finding the shortest distance from a given point to every other point in a weighted graph. The algorithm works by keeping track of all the distances and updating the distances as it conducts a breadth-first search. A common application of this algorithm is to find the quickest route from one destination to another.
+## A* Search
+As opposed to Dijkstra’s which finds the shortest path from any point to any other point, A* is used to find the shortest path from one specific point to another specific point in the Graph. This allows us to avoid searching for any other connecting paths, saving a lot of time in the process!

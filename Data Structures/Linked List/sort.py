@@ -7,6 +7,7 @@
 6. return the new linked list
 """
 from linkedlist import LinkedList
+from find_max import find_max
 
 # we are sorting from smallest to largest
 def sort_linked_list(linked_list):
@@ -14,20 +15,11 @@ def sort_linked_list(linked_list):
     print("The original linked list is:\n{0}".format(linked_list.stringify_list()))
     new_linked_list = LinkedList()
 
-    current = linked_list.get_head_node()
-    maximum = current.get_value()
-    while current.get_next_node():
-        if current.get_value() > maximum:
-            new_linked_list.insert_beginning(current.get_value())
-            linked_list.remove_node(current.get_value())
+    while linked_list.get_head_node():
+        current_max = find_max(linked_list)
+        linked_list.remove_node(current_max)
+        new_linked_list.insert_beginning(current_max)
     
-        current.get_next_node()
-
-    return new_linked_list
-
-
-
-
     return new_linked_list
 
   
@@ -56,5 +48,5 @@ ll_3.insert_beginning(-92)
 print("The sorted linked list is:\n{0}".format(sort_linked_list(ll_3).stringify_list()))
 
 #Runtime
-runtime = "N"
+runtime = "N^2"
 print("The runtime of sort_linked_list is O({0})\n\n".format(runtime))

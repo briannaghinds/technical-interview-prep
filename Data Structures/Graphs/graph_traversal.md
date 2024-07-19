@@ -4,5 +4,27 @@ Simply put, a depth-first graph search continues down a path until it reaches th
 On the other hand, a breadth-first graph search approach checks the values of all neighboring vertices before moving into another level of depth. This is an incredibly inefficient way to find just any path between two vertices, but it’s an excellent way to identify the shortest path between them. Because of this, BFS is helpful for figuring out directions from one place to another.
 ## Dijkstra's Algorithm
 Dijkstra’s algorithm is a method for finding the shortest distance from a given point to every other point in a weighted graph. The algorithm works by keeping track of all the distances and updating the distances as it conducts a breadth-first search. A common application of this algorithm is to find the quickest route from one destination to another.
+
+**Dijkstra’s Algorithm works as following (breadth):**
+
+(1) Instantiate a dictionary that will eventually map vertices 
+to their distance from the start vertex
+
+(2) Assign the start vertex a distance of 0 in a min heap
+
+(3) Assign every other vertex a distance of infinity in a min heap because we don't know the distances yet
+
+(4) Remove the vertex with the smallest distance from the min heap and set that to the current vertex
+
+(5) For the current vertex, consider all of its adjacent vertices and calculate the distance to them as (distance to the current vertex) + (edge weight of current vertex to adjacent vertex).
+
+(6) If this new distance is less than the current distance, replace the current distance.
+
+(7) Repeat 4 and 5 until the heap is empty
+
+(8) After the heap is empty, return the distances
+
+TIME COMPLEXITY: O((V+E)log V) -> in worst case we will visit all V+E vertices and edges, in each visit we may have to update our min-heap which takes log V time
+
 ## A* Search
 As opposed to Dijkstra’s which finds the shortest path from any point to any other point, A* is used to find the shortest path from one specific point to another specific point in the Graph. This allows us to avoid searching for any other connecting paths, saving a lot of time in the process!

@@ -2,6 +2,15 @@
 Simply put, a depth-first graph search continues down a path until it reaches the end. It is helpful for determining if a path exists between two vertices. DFS has many applications, including topological sorting and detecting cycles, but one of the more interesting real-world applications is that it can be used to solve problems that have a singular correct answer (a path between the start state and end state), such as a sudoku exercise.
 ## Breadth First Search
 On the other hand, a breadth-first graph search approach checks the values of all neighboring vertices before moving into another level of depth. This is an incredibly inefficient way to find just any path between two vertices, but it’s an excellent way to identify the shortest path between them. Because of this, BFS is helpful for figuring out directions from one place to another.
+
+## Graph Traversal Order
+What if we don't need to find a path but instead just get a list of all the values in the graph? We can do this with graph traversal. There are 3 types:
+
+(1) Preorder: each vertex is added to a "visited" list and added to the output list BEFORE getting added to the stack
+
+(2) Postorder: each vertex is added to the "visited" list and added to the output lits AFTER being popped off the stack
+
+(3) Reverse Postorder: (Topological Sort) returns an output list that is exactly the reverse of the post-order list
 ## Dijkstra's Algorithm
 Dijkstra’s algorithm is a method for finding the shortest distance from a given point to every other point in a weighted graph. The algorithm works by keeping track of all the distances and updating the distances as it conducts a breadth-first search. A common application of this algorithm is to find the quickest route from one destination to another.
 

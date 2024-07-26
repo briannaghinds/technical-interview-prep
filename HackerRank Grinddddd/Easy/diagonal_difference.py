@@ -16,9 +16,9 @@ def diag_diff(arr):
         left_right += arr[i][i]
         print(f"value at [{i}][{i}]: {arr[i][i]} adding to left_right")
 
-        # get right to left values (ij): 20 -> 11 -> 02, we can find j by taking the absolute value of i-len(arr)-1
+        # get right to left values (ij): 20 -> 11 -> 02, we can find the row by taking the absolute value of i-len(arr)-1
         right_left += arr[abs(i-(len(arr)-1))][i]
-        print(f"value at [{i}][{abs(i-(len(arr)-1))}]: {arr[i][abs(i-(len(arr)-1))]} adding to left_right")
+        print(f"value at [{abs(i-(len(arr)-1))}][{i}]: {arr[abs(i-(len(arr)-1))][i]} adding to right_left")
 
 
     return abs(left_right-right_left)

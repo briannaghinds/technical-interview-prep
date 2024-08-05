@@ -14,7 +14,7 @@ def reverse_custom(string:str):
     return r
 
 
-def reverse_python(string:str):
+def reverse_slicing(string:str):
     return string[::-1]  # start at end, end at position 0, with steps of -1
 
 
@@ -22,4 +22,4 @@ if __name__ == "__main__":
     string = "Hello World"
 
     print(reverse_custom(string))
-    print(reverse_python(string))
+    print(reverse_slicing(string))
